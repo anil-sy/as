@@ -9,17 +9,7 @@ pipeline {
     }
 
     stages {
-        stage('Scm-Checkout') {
-            steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/anil-sy/dev.git'
-				
-               
-            }
-
-          
-        }
-		 stage('compile') {
+      	 stage('compile') {
             steps {
                
                 // Run Maven on a Unix agent.
